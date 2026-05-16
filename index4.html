@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nura Beauty | Skincare E-commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --soft-pink: #f2d5d5;
+            --dusty-rose: #d8a7a7;
+            --maroon-text: #7a4a4a;
+            --deep-rose: #c08282;
+            --bg-light: #ffffff;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--maroon-text);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .script-font {
+            font-family: 'Great Vibes', cursive;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-color: var(--dusty-rose);
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .btn-nura {
+            background-color: white;
+            color: var(--maroon-text);
+            border: none;
+            border-radius: 50px;
+            padding: 10px 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            transition: 0.3s;
+        }
+
+        .btn-nura:hover {
+            background-color: var(--soft-pink);
+        }
+
+        /* Product Card */
+        .product-img-wrapper {
+            background-color: var(--soft-pink);
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            mix-blend-mode: multiply;
+        }
+
+        .btn-add-cart {
+            background-color: var(--deep-rose);
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 8px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+
+        /* Sale Banner */
+        .sale-banner {
+            background-color: var(--soft-pink);
+            padding: 80px 0;
+        }
+
+        .img-overlap {
+            border-radius: 10px;
+            box-shadow: 20px 20px 0px var(--dusty-rose);
+        }
+
+        /* Testimonial Section */
+        .testimonial-section {
+            background-color: var(--dusty-rose);
+            padding: 60px 0;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: white;
+            padding: 60px 0 20px;
+        }
+
+        .social-icons a {
+            color: black;
+            margin-right: 15px;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            background-color: var(--deep-rose);
+            color: white;
+            padding: 10px 0;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-white py-3">
+        <div class="container">
+            <a class="navbar-brand script-font fs-2" href="#">Nura Beauty</a>
+            <button class="navbar-toggler border-0" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <h1 class="display-4 fw-bold mb-3">Beauty that Begins with You</h1>
+                    <p class="lead mb-4">Premium skincare designed to bring out your most luminous self.</p>
+                    <button class="btn btn-nura">Shop the Collection</button>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="skincare.jpg.webp"Skincare Set" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5 py-5">
+        <h2 class="text-center mb-5">Our Bestsellers</h2>
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="product-card text-center">
+                    <div class="product-img-wrapper">
+                        <img src="serum.jpg.jpg" alt="Serum">
+                    </div>
+                    <h6 class="fw-bold mb-1">Radiance Renewal Serum</h6>
+                    <p class="small text-muted" style="font-size: 0.7rem;">Glow-boosting vitamin C serum.</p>
+                    <button class="btn btn-add-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="product-card text-center">
+                    <div class="product-img-wrapper">
+                        <img src="mois.jpg.jpg" alt="Moisturizer">
+                    </div>
+                    <h6 class="fw-bold mb-1">HydraSilk Moisturizer</h6>
+                    <p class="small text-muted" style="font-size: 0.7rem;">Deeply hydrates without heavy feel.</p>
+                    <button class="btn btn-add-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="product-card text-center">
+                    <div class="product-img-wrapper">
+                        <img src="lip.jpg.jpg" alt="Lip">
+                    </div>
+                    <h6 class="fw-bold mb-1">Velisse Lip Nectar</h6>
+                    <p class="small text-muted" style="font-size: 0.7rem;">Nourishing tinted balm.</p>
+                    <button class="btn btn-add-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="product-card text-center">
+                    <div class="product-img-wrapper">
+                        <img src="facial wash.jpg.jpg" alt="Cleanser">
+                    </div>
+                    <h6 class="fw-bold mb-1">Botanic Cleanse Gel</h6>
+                    <p class="small text-muted" style="font-size: 0.7rem;">Gentle yet powerful cleanser.</p>
+                    <button class="btn btn-add-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sale-banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 offset-md-1">
+                    <h2 class="display-5">Spring Beauty Sale</h2>
+                    <h3 class="fw-light mb-4">Up to 40% OFF</h3>
+                    <p>Fresh formulas. Soft hues. Skin that glows like spring mornings.</p>
+                    <button class="btn btn-nura shadow-sm mt-3" style="background: var(--maroon-text); color: white;">Shop Now</button>
+                </div>
+                <div class="col-md-5 text-center mt-5 mt-md-0">
+                    <img src="skincare2.jpg.webp" alt="Sale" class="img-fluid img-overlap">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-4">
+                    <h5>Loved by Thousands</h5>
+                    <div class="text-warning mb-2">★★★★★</div>
+                    <p class="fst-italic">"My skin has never looked this fresh. The serum is magic."</p>
+                    <p class="small fw-bold">— Tasha M.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h5>Ready to glow like never before?</h5>
+                    <p class="small">Join thousands who've transformed their skincare game with clean, effective, and feel-good formulas.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="harlete.jpg.jpg" class="rounded shadow" alt="Lotus">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h2 class="script-font">Nura Beauty</h2>
+                    <p class="small text-muted mt-3">
+                        123 Bloom Avenue, Rosewood, CA 90210<br>
+                        Mon-Fri: 9am-5pm PST
+                    </p>
+                    <p class="small text-muted">
+                        Email: hello@velissebeauty.com<br>
+                        Phone: +1 (555) 012-3456
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6>Quick Links:</h6>
+                    <ul class="list-unstyled small mt-3">
+                        <li><a href="#" class="text-decoration-none text-muted">Shop</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">About</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Blog</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6>Follow Us:</h6>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <div class="container">
+                © 2023 Nura Beauty. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
